@@ -33,7 +33,7 @@ const Graphics = () => {
   useEffect(() => {
     generateData(data).then(({ newArray, labels }) => {
       setVotesData({
-        labels,
+        labels:labels,
         datasets: [
           {
             label: 'Si Votaron',
@@ -45,12 +45,11 @@ const Graphics = () => {
             data: newArray.map((data) => data.noVotaron),
             backgroundColor: 'red'
           }
-        ],
-        responsive: true
+        ]
       })
     })
     setLoading(false)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [])
 
   return (

@@ -4,7 +4,6 @@ import Graphics from '../../components/graphics'
 import Header from '../../components/header'
 
 const Graficos = () => {
-console.log('datos graficos');
   return (
     <div className=" bg-[#f8f8f8] pb-10">
       <Header />
