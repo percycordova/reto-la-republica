@@ -26,14 +26,14 @@ const Graphics = () => {
           noVotaron: sumaNoVotaron
         })
       }
-      resolve({ newArray, labels })
+      resolve(newArray)
     })
   }
 
   useEffect(() => {
-    generateData(data).then(({ newArray, labels }) => {
+    generateData(data).then((newArray) => {
       setVotesData({
-        labels:labels,
+        labels:newArray.map((data) => data.bancada),
         datasets: [
           {
             label: 'Si Votaron',
