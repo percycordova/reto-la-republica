@@ -17,7 +17,7 @@ const Graficos = ({ data }) => {
 export default Graficos
 
 Graficos.getInitialProps = () => {
-  return fetch('http://localhost:3000/api/graphics')
+  return fetch('https://reto-la-republica.vercel.app/api/graphics')
     .then((res) => res.json())
     .then((response) => {
       return {

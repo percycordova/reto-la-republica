@@ -16,7 +16,7 @@ export default function Home({ data }) {
 }
 
 Home.getInitialProps = () => {
-  return fetch('http://localhost:3000/api/hello')
+  return fetch('https://reto-la-republica.vercel.app/api/hello')
     .then((res) => res.json())
     .then((response) => {
       return {
