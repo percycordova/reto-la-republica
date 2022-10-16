@@ -51,7 +51,7 @@ const Graphics = () => {
     setLoading(false)
 
   }, [])
-
+console.log(votesData)
   return (
     <>
       <div className="max-w-[1350px] mx-auto px-5">
