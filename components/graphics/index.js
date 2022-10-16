@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import BarChart from './BarChart'
-
-const Graphics = ({ data }) => {
+import {data} from '../../data/data_02'
+const Graphics = () => {
   const [votesData, setVotesData] = useState()
   const [loading, setLoading] = useState(true)
 
