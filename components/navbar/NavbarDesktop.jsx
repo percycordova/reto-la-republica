@@ -4,7 +4,8 @@ import Link from 'next/link'
 const NavbarDesktop = () => {
   return (
     <nav className="mt-3  lg:flex justify-between items-center hidden">
-      <a href="/" className="hover:opacity-80 duration-300">
+      <Link href="/" >
+        <div className="hover:opacity-80 duration-300 cursor-pointer">
         <Image
           src="/header/elecciones-2022.png"
           width={254}
@@ -12,7 +13,9 @@ const NavbarDesktop = () => {
           loading="lazy"
           alt="elecciones-2022"
         />
-      </a>
+        </div>
+        
+      </Link>
       <ul className="flex gap-3 text-sm font-bold">
         <li className="hover:text-gray-600 duration-300">
           <Link href="/" passHref>

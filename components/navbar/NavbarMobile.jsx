@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 const NavbarMobile = () => {
   return (
     <nav className="mt-3  flex justify-between items-center lg:hidden">
@@ -8,7 +9,8 @@ const NavbarMobile = () => {
         <div className="w-5 h-[3px] bg-[#383939]"></div>
         <div className="w-5 h-[3px] bg-[#383939]"></div>
       </div>
-      <a href="/" className="hover:opacity-80 duration-300">
+      <Link href="/" >
+        <div className="hover:opacity-80 duration-300">
         <Image
           src="/header/elecciones-2022.png"
           width={208}
@@ -16,7 +18,9 @@ const NavbarMobile = () => {
           loading="lazy"
           alt="elecciones-2022"
         />
-      </a>
+        </div>
+        
+      </Link>
     </nav>
   )
 }
