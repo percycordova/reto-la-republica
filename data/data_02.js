@@ -1,4 +1,4 @@
-[
+export  const data =[
   {
     "APELLIDOS Y NOMBRES": "Acate Coronel Eduardo Geovanni",
     "BANCADA": "Alianza para el Progreso",

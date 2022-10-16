@@ -2,8 +2,9 @@ import React from 'react'
 import Footer from '../../components/footer'
 import Graphics from '../../components/graphics'
 import Header from '../../components/header'
+import {data} from '../../data/data_02'
+const Graficos = () => {
 
-const Graficos = ({ data }) => {
   return (
     <div className=" bg-[#f8f8f8] pb-10">
       <Header />
@@ -16,12 +17,4 @@ const Graficos = ({ data }) => {
 
 export default Graficos
 
-Graficos.getInitialProps = () => {
-  return fetch('https://reto-la-republica.vercel.app/api/graphics')
-    .then((res) => res.json())
-    .then((response) => {
-      return {
-        data: response
-      }
-    })
-}
+
