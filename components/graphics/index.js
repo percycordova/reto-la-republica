@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import BarChart from './BarChart'
-import {data} from '../../data/data_02'
-const Graphics = () => {
+
+const Graphics = ({data}) => {
   const [votesData, setVotesData] = useState()
   const [loading, setLoading] = useState(true)
 
@@ -50,8 +50,8 @@ const Graphics = () => {
     })
     setLoading(false)
 
-  }, [])
-console.log(votesData)
+  }, [data])
+
   return (
     <>
       <div className="max-w-[1350px] mx-auto px-5">
