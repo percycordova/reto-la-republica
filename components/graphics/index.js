@@ -56,7 +56,7 @@ const Graphics = ({data}) => {
     <>
       <div className="max-w-[1350px] mx-auto px-5">
         <h1 className="text-center font-bold text-2xl my-8">
-          ¿Cuántos congresistas asistieron a votar?
+          Conozca cuántos congresistas de cada bancada asistieron a votar 
         </h1>
         {!loading && <BarChart data={votesData} />}
       </div>
